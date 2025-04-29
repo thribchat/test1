@@ -1,0 +1,97 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "TaxiRides.parquet",
+				"container": "gitlab"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "RideId",
+				"type": "INT32"
+			},
+			{
+				"name": "VendorId",
+				"type": "INT32"
+			},
+			{
+				"name": "PickupTime",
+				"type": "INT96"
+			},
+			{
+				"name": "DropTime",
+				"type": "INT96"
+			},
+			{
+				"name": "PickupLocationId",
+				"type": "INT32"
+			},
+			{
+				"name": "DropLocationId",
+				"type": "INT32"
+			},
+			{
+				"name": "CabNumber",
+				"type": "UTF8"
+			},
+			{
+				"name": "DriverLicenseNumber",
+				"type": "INT32"
+			},
+			{
+				"name": "PassengerCount",
+				"type": "INT32"
+			},
+			{
+				"name": "TripDistance",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "RateCodeId",
+				"type": "INT32"
+			},
+			{
+				"name": "PaymentType",
+				"type": "INT32"
+			},
+			{
+				"name": "TotalAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "FareAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Extra",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "MtaTax",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "TipAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "TollsAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "ImprovementSurcharge",
+				"type": "DOUBLE"
+			}
+		]
+	}
+}
