@@ -1,0 +1,9 @@
+{
+	"name": "thribDF2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "06bde383-c89f-4e75-bbd1-792d87730ce7",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
